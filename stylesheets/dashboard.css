@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+/* line 10, ../sass/dashboard.scss */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/dashboard.scss */
+*:before, *:after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+/* line 22, ../sass/dashboard.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 26, ../sass/dashboard.scss */
+body {
+  font: 15px/1 'Open Sans', sans-serif;
+  color: #777;
+}
+
+/* line 31, ../sass/dashboard.scss */
+a {
+  cursor: pointer;
+}
+
+/* line 35, ../sass/dashboard.scss */
+ul {
+  list-style: none;
+}
+
+/* line 39, ../sass/dashboard.scss */
+.wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+/* line 44, ../sass/dashboard.scss */
+nav {
+  width: 215px;
+  background: #222;
+}
+
+/* line 49, ../sass/dashboard.scss */
+nav header {
+  position: relative;
+  height: 80px;
+  padding: 20px 0 0 15px;
+  font-size: 16px;
+  color: #fff;
+  background: #151515;
+}
+
+/* line 58, ../sass/dashboard.scss */
+nav header span {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  border: 1px solid #fff;
+}
+
+/* line 68, ../sass/dashboard.scss */
+nav header span:before {
+  content: '\f007';
+  font: normal 20px fontawesome;
+  top: 7px;
+  left: 9px;
+}
+
+/* line 75, ../sass/dashboard.scss */
+nav header a:before {
+  content: '\f08b';
+  font: normal 20px fontawesome;
+  top: 28px;
+  right: 15px;
+}
+
+/* line 82, ../sass/dashboard.scss */
+nav ul span {
+  display: block;
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  border-bottom: 1px solid #151515;
+}
+
+/* line 90, ../sass/dashboard.scss */
+nav ul a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 17px 50px;
+  color: #fff;
+  border-bottom: 1px solid #151515;
+}
+
+/* line 98, ../sass/dashboard.scss */
+nav ul a:hover,
+nav ul a.active {
+  background: #353535;
+}
+
+/* line 103, ../sass/dashboard.scss */
+nav ul a:before {
+  font: normal 16px fontawesome;
+  top: 15px;
+  left: 18px;
+}
+
+/* line 109, ../sass/dashboard.scss */
+nav ul li:nth-child(2) a:before {
+  content: '\f00a';
+}
+
+/* line 110, ../sass/dashboard.scss */
+nav ul li:nth-child(3) a:before {
+  content: '\f012';
+}
+
+/* line 111, ../sass/dashboard.scss */
+nav ul li:nth-child(4) a:before {
+  content: '\f018';
+}
+
+/* line 112, ../sass/dashboard.scss */
+nav ul li:nth-child(5) a:before {
+  content: '\f024';
+}
+
+/* line 113, ../sass/dashboard.scss */
+nav ul li:nth-child(6) a:before {
+  content: '\f0c3';
+}
+
+/* line 114, ../sass/dashboard.scss */
+nav ul li:nth-child(7) a:before {
+  content: '\f09b';
+}
+
+/* line 115, ../sass/dashboard.scss */
+nav ul li:nth-child(8) a:before {
+  content: '\f0fa';
+}
+
+/* line 116, ../sass/dashboard.scss */
+nav ul li:nth-child(10) a:before {
+  content: '\f002';
+}
+
+/* line 117, ../sass/dashboard.scss */
+nav ul li:nth-child(11) a:before {
+  content: '\f085';
+}
+
+/* line 118, ../sass/dashboard.scss */
+nav ul li:nth-child(12) a:before {
+  content: '\f08b';
+}
+
+/* line 120, ../sass/dashboard.scss */
+main {
+  flex: 1;
+  padding: 25px;
+  background: #f5f5f5;
+}
+
+/* line 126, ../sass/dashboard.scss */
+main h1 {
+  height: 80px;
+  margin: -25px -25px 25px -25px;
+  padding: 0 25px;
+  line-height: 76px;
+  font-size: 24px;
+  font-weight: 400;
+  background: #5f5f5f;
+  color: #fff;
+}
+
+/* line 137, ../sass/dashboard.scss */
+.flex-grid {
+  display: flex;
+}
+
+/* line 141, ../sass/dashboard.scss */
+.flex-grid > div {
+  flex: 1;
+  margin: 0 20px 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+/* line 149, ../sass/dashboard.scss */
+.flex-grid > div:last-child {
+  margin-right: 0;
+}
+
+/* line 153, ../sass/dashboard.scss */
+.flex-grid h2 {
+  margin: -15px -15px 15px -15px;
+  padding: 12px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 161, ../sass/dashboard.scss */
+.flex-grid li {
+  position: relative;
+  margin: 0 0 10px;
+  padding: 0 0 0 25px;
+}
+
+/* line 167, ../sass/dashboard.scss */
+.flex-grid li:before {
+  content: '\f00c';
+  font: normal 16px fontawesome;
+  top: 0;
+  left: 0;
+  color: #999;
+}
+
+/*
+** Media Queries
+***********************************************************/
+@media (max-width: 1000px) {
+  /* line 181, ../sass/dashboard.scss */
+  .flex-grid {
+    flex-direction: column;
+  }
+
+  /* line 185, ../sass/dashboard.scss */
+  .flex-grid > div {
+    margin-right: 0;
+  }
+}
